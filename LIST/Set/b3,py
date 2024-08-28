@@ -1,0 +1,20 @@
+from math import *
+from collections import Counter
+from functools import cmp_to_key
+
+
+if __name__ == '__main__':
+    n = int(input())
+    a = list(map(int , input().split()))
+    # s = set({})
+    # for x in a:
+    #     if x not in s:
+    #         print(x  , end = ' ')
+    #         s.add(x)
+
+    d = dict({})
+    for x in a:
+        if x not in d:
+            print(x , end =' ')
+            d[x] = 1
+    
